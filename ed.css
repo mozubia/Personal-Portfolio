@@ -1,0 +1,76 @@
+.header .container-ed{
+    position: absolute;
+    display: flex;
+    width: 450px;
+    top: 20%;
+    left: 7%;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.header .container-ed-text{
+    width: 450px;
+    border-radius: 25px;
+    margin: 10px 30px 10px 0;
+    padding: 20px 20px;
+    background: white;
+    opacity: 0.7;
+    text-align: center;
+    text-justify: inter-word;
+    color: midnightblue;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+    transition: 0.5s;
+}
+
+.header .container-ed-text:hover{
+box-shadow: 3px 10px 10px black;
+background-color: midnightblue;
+color: white;
+opacity: 1;
+transform: translateY(-10px);
+}
+
+.header .container-ed-text h1{
+font-weight: bold;
+font-size: 22px;
+line-height: 25px;
+}
+
+.header .container-ed-text h2{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header .container-ed-text h3{
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header .container-ed-text h4{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.header .container-ed-text p{
+    font-size: 14px;
+}
+
+.header .container-ed2{
+    position: relative;
+    display: flex;
+    width: 450px;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.header .container2-ed{
+    position: absolute;
+    display: flex;
+    width: 450px;
+    top: 20%;
+    right: 7%;
+    justify-content: center;
+    flex-direction:column;
+}

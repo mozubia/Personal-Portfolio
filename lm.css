@@ -1,0 +1,244 @@
+.container-skills-header {
+    top:15px;
+    width: 86%;
+    height: 75px;
+    display:flex;
+    margin-left: 7% ;
+    margin-right: 7%;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .container-skills-header .span3{
+    width:450px;
+    float: left;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+  }
+  
+  .container-skills-header .span3 h1{
+    color: midnightblue;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 29px;
+    transition: 0.5s;
+  }
+  
+  .container-skills-header .span4{
+    width:450px;
+    float: right;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+  }
+  
+  .container-skills-header .span4 h1{
+    color: midnightblue;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 29px;
+    transition: 0.5s;
+  }
+.header .container-lm{
+    position: absolute;
+    display: flex;
+    width: 450px;
+    top: 25%;
+    left: 7%;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.header .container-text{
+    width: 450px;
+    border-radius: 25px;
+    margin: 10px 30px 10px 0;
+    padding: 20px 20px;
+    background: white;
+    opacity: 0.7;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 16px;
+    color: midnightblue;
+    letter-spacing: 0.9px;
+    transition: 0.5s;
+
+}
+
+.header .container-text:hover{
+    box-shadow: 3px 10px 10px black;
+    background-color: midnightblue;
+    color: white;
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+.header .container-lm .cv-btn{
+    margin: 10px 75px;
+    color: white;
+    border: 2px solid black;
+    background-color: midnightblue;
+    border-radius:100px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+}
+
+.header .container-lm .cv-btn:hover{
+    background-color: white;
+    color: midnightblue;
+    box-shadow: 3px 10px 10px black;
+}
+
+.container-skills {
+    position: absolute;
+    width: 450px;
+    top: 25%;
+    right: 7%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .container-skills .card {
+    position: relative;
+    width: 33%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .container-skills .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .container-skills .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    pointer-events: none;
+    z-index: -2;
+  }
+  
+  .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 80px black;
+    background: transparent;
+    z-index: 1000;
+    transition: 0.5s;
+  }
+  
+  .percent .center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .percent .center h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+  
+    transition: 0.5s;
+  }
+  
+  .card:hover .percent{
+    box-shadow: inset 0px 0px 80px white;
+  }
+
+  .card:hover .percent .center h2 {
+    color: midnightblue;
+    font-size: 23px;
+  }
+  
+  svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+  }
+  
+  svg circle
+  {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+  }
+  
+  svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+  
+  .card:nth-child(1):hover svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 82) / 100);
+    stroke: midnightblue;
+    transition: 0.7s;
+  }
+  
+  .card:nth-child(2):hover svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 77) / 100);
+    stroke: midnightblue;
+    transition: 0.7s;
+  }
+  
+  .card:nth-child(3):hover svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+    stroke: midnightblue;
+    transition: 0.7s;
+  }
+  
+  .card:nth-child(4):hover svg circle:nth-child(2) {
+      stroke-dashoffset: calc(440 - (440 * 65) / 100);
+      stroke: midnightblue;
+      transition: 0.7s;
+   }
+  
+   .card:nth-child(5):hover svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 62) / 100);
+    stroke: midnightblue;
+    transition: 0.7s;
+  }
+    
+  .card:nth-child(6):hover svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    stroke: midnightblue;
+    transition: 0.7s;
+  }
+    
+  .card:nth-child(7):hover svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 81) / 100);
+    stroke: midnightblue;
+    transition: 0.7s;
+  }
+    
+  .card:nth-child(8):hover svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 45) / 100);
+    stroke: midnightblue;
+    transition: 0.7s;
+  }    

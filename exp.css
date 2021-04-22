@@ -1,0 +1,308 @@
+ .container-exp{
+  top:15px;
+  width: 100%;
+  height: 75px;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.span3{
+  width:450px;
+  float: left;
+  padding-left: 112.5px;
+  padding-right: 112.5px;
+  transition: 1s;
+}
+
+.span3 h1{
+  color: midnightblue;
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 29px;
+  transition: 1s;
+}
+
+.span4{
+  width:450px;
+  float: right;
+  padding-left: 112.5px;
+  padding-right: 112.5px;
+}
+
+.span4 h1{
+  color: midnightblue;
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 29px;
+}
+  
+  /* Position the front and back side */
+ .flip-card-front, .flip-card-back {
+    position: absolute;
+    min-width: 100%;
+    mix-blend-mode: multiply;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front{
+    text-align: center;
+    margin: 10px 30px 10px 0;
+    padding: 10px 10px;
+    opacity: 0.7;
+    background: white;
+    color:midnightblue;
+    border-radius: 25px;
+    transition: 1s;    
+
+  }
+  /* Style the back side */
+ .flip-card-back {
+    transform: translate(-100%, 0);
+    background-color: midnightblue;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: left;
+    margin: 10px 30px 10px 0;
+    padding: 20px 20px;
+    border-radius: 25px;
+    /* z-index: 10; */
+  }
+
+.flip-card-front h2{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.flip-card-back p{
+  font-size: 0.9em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.flip-card-back h4{
+font-variant: small-caps;
+}
+
+.flip-card-back ul{
+  list-style-type: disc;
+  font-size: 0.9em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card1 {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: 200px;
+  top: 20%;
+  left: 0%;
+  flex-direction:column;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card1:hover .flip-card-inner1 {
+transform: rotateY(180deg);
+}
+
+.flip-card2 {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: 200px;
+  top: 35%;
+  left: 0%;
+  flex-direction:column;    
+}
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card3 {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: 200px;
+  top: 50%;
+  left: 0%;
+  flex-direction:column;    
+}
+
+.flip-card-inner3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card3:hover .flip-card-inner3 {
+  transform: rotateY(180deg);
+}
+
+.flip-card1:hover + .flip-card2 {
+  opacity:0;
+  transition: 0.2s;
+}
+
+.flip-card1:hover ~ .flip-card3 {
+  opacity:0;
+  transition: 0.2s;
+}
+
+.flip-card2:hover + .flip-card3 {
+  opacity:0;
+  transition: 0.2s;
+}
+
+.flip-card4 {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: 200px;
+  top: 20%;
+  right: 0%;
+  flex-direction:column;    
+}
+
+.flip-card-inner4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card4:hover .flip-card-inner4 {
+transform: rotateY(180deg);
+}
+
+.flip-card5 {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: 200px;
+  top: 35%;
+  right: 0%;
+  flex-direction:column;    
+}
+
+.flip-card-inner5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card5:hover .flip-card-inner5 {
+  transform: rotateY(180deg);
+}
+
+.flip-card6 {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: 200px;
+  top: 50%;
+  right: 0%;
+  flex-direction:column;    
+}
+
+.flip-card-inner6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card6:hover .flip-card-inner6 {
+  transform: rotateY(180deg);
+}
+
+.flip-card7 {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: 200px;
+  top: 65%;
+  right: 0%;
+  flex-direction:column;    
+}
+
+.flip-card-inner7 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card7:hover .flip-card-inner7 {
+  transform: rotateY(180deg);
+}
+
+.flip-card8 {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  height: 200px;
+  top: 80%;
+  right: 0%;
+  flex-direction:column;    
+}
+
+.flip-card-inner8 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card8:hover .flip-card-inner8 {
+  transform: rotateY(180deg);
+}
+
+.flip-card4:hover + .flip-card5, .flip-card4:hover ~ .flip-card6, .flip-card4:hover ~ .flip-card7, .flip-card4:hover ~ .flip-card8 {
+  opacity:0;
+  transition: 0.2s;
+}
+
+.flip-card5:hover + .flip-card6, .flip-card5:hover ~ .flip-card7, .flip-card5:hover ~ .flip-card8 {
+  opacity:0;
+  transition: 0.2s;
+}
+
+.flip-card6:hover + .flip-card7, .flip-card6:hover ~ .flip-card8 {
+  opacity:0;
+  transition: 0.2s;
+}
+
+.flip-card7:hover + .flip-card8{
+  opacity:0;
+  transition: 0.2s;
+}
+
